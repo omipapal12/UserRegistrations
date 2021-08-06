@@ -22,7 +22,7 @@ public class UserRegistration {
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
     /*
-    3) Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
+    3) For printing Email Pattern
      * E.g. abc.def@com.co.in
      */
     public static void validEmailId() {
@@ -81,14 +81,13 @@ public class UserRegistration {
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$", password));
     }
     /*
-    9)Check whether the Email Sample is true or not.Get reference from Email Sample pdf.
+    9)Check whether the Email Sample is true or not.
      */
-    public boolean validEmail(String Email) {
+    public static void validEmail(String Email) {
         System.out.println("Checking the Email Samples");
         final String EMAIL_PATTERN = "^[A-Za-z0-9+-_.]+@[A-Za-z0-9+_.]+$";
         boolean result = Email.matches(EMAIL_PATTERN);
         System.out.println(result);
-        return result;
     }
 }
 
