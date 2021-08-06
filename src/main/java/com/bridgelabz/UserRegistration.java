@@ -12,4 +12,13 @@ public class UserRegistration {
         String FirstName = scanner.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", FirstName));
     }
+    /*
+     2) Last Name start with Capital letter and it has minimum 3 charachter
+     */
+    public static void validLastName() {
+        System.out.print("Enter Last Name : ");
+        Scanner scanner = new Scanner(System.in);
+        String LastName = scanner.next();
+        System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
+    }
 }
