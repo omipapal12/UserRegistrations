@@ -21,4 +21,14 @@ public class UserRegistration {
         String LastName = scanner.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
+    /*
+     * Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
+     * E.g. abc.def@com.co.in
+     */
+    public static void validEmail() {
+        System.out.print("Enter Email : ");
+        Scanner scanner = new Scanner(System.in);
+        String Email = scanner.next();
+        System.out.println(Pattern.matches("^[a-zA-Z]+([.][a-zA-Z]+)*@[a-zA-Z]+[.][a-zA-Z]{2,3}+([.][a-zA-Z]+)*$", Email));
+    }
 }
