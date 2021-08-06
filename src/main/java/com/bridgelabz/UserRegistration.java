@@ -25,7 +25,7 @@ public class UserRegistration {
     3) Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
      * E.g. abc.def@com.co.in
      */
-    public static void validEmail() {
+    public static void validEmailId() {
         System.out.print("Enter Email : ");
         Scanner scanner = new Scanner(System.in);
         String Email = scanner.next();
@@ -80,7 +80,20 @@ public class UserRegistration {
         String password = scanner.next();
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$", password));
     }
+    /*
+    9)Check whether the Email Sample is true or not.Get reference from Email Sample pdf.
+     */
+    public boolean validEmail(String Email) {
+        System.out.println("Checking the Email Samples");
+        final String EMAIL_PATTERN = "^[A-Za-z0-9+-_.]+@[A-Za-z0-9+_.]+$";
+        boolean result = Email.matches(EMAIL_PATTERN);
+        System.out.println(result);
+        return result;
+    }
 }
+
+
+
 
 
 
