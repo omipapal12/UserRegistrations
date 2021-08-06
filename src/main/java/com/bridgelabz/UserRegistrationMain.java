@@ -1,21 +1,12 @@
 package com.bridgelabz;
 
 public class UserRegistrationMain {
-    /*
-    ~Creating main method.
-     */
     public static void main(String[] args) {
-    /*
-    ~Welcome message of User Registration
-    */
-        System.out.println("***Welcome to User Registration***");
-    /*
-    ~Creating Object
-     */
+    //Welcome message of User Registration
+     System.out.println("***Welcome to User Registration***");
+    //Creating Object
         UserRegistration userRegistration = new UserRegistration();
-    /*
-    ~Calling method throw object reference
-     */
+    //Calling method throw object reference
         userRegistration.validFirstName();
         userRegistration.validLastName();
         userRegistration.validEmailId();
