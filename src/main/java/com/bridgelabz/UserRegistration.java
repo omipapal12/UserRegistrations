@@ -64,13 +64,24 @@ public class UserRegistration {
     7)Password Rule 3:- Password Should have at least 1 Numeric number
      */
     public static void validPasswordRule3() {
-        System.out.println("Rule 3 Should have at least 1 Numeric Number");
+        System.out.println("Paaword Should have at least 1 Numeric Number");
         System.out.print("Enter Password Rule 3  : ");
         Scanner scanner = new Scanner(System.in);
         String Password = scanner.next();
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$", Password));
     }
+    /*
+    8)Password Rule 4:- Password Should have at least 1 Special Character (@#$%^&-+=)
+     */
+    public static void validPasswordRule4() {
+        System.out.println("Password Should have at least 1 Special Character ");
+        System.out.print("Enter password Rule 4  : ");
+        Scanner scanner = new Scanner(System.in);
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$", password));
+    }
 }
+
 
 
 
