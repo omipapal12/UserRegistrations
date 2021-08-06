@@ -11,5 +11,6 @@ public class UserRegistrationMain {
         userRegistration.validEmail();
         userRegistration.validMobileNumber();
         userRegistration.validPasswordRule1();
+        userRegistration.validPasswordRule2();
     }
 }

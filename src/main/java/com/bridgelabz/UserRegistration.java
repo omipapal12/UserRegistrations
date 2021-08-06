@@ -44,9 +44,23 @@ public class UserRegistration {
     5)Password Rule 1:- Password contains minimum 8 characters
      */
     public static void validPasswordRule1() {
+        System.out.println("Password Should have minimum 8 charachters");
         System.out.print("Enter Password : ");
         Scanner scanner = new Scanner(System.in);
         String Password = scanner.next();
         System.out.println(Pattern.matches("^(?=.*[a-z]).{8,}$", Password));
     }
+    /*
+    6)Password Rule 2:- Password Should have at least 1 Upper Case
+     */
+    public static void validPasswordRule2() {
+        System.out.println("Password Should have at least 1 Upper Case");
+        System.out.print("Enter Password Rule 2  : ");
+        Scanner scanner = new Scanner(System.in);
+        String Password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z]).{8,}$", Password));
+    }
 }
+
+
+
