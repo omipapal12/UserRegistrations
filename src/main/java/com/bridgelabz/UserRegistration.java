@@ -22,7 +22,7 @@ public class UserRegistration {
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
     /*
-     * Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
+    3) Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
      * E.g. abc.def@com.co.in
      */
     public static void validEmail() {
@@ -30,5 +30,14 @@ public class UserRegistration {
         Scanner scanner = new Scanner(System.in);
         String Email = scanner.next();
         System.out.println(Pattern.matches("^[a-zA-Z]+([.][a-zA-Z]+)*@[a-zA-Z]+[.][a-zA-Z]{2,3}+([.][a-zA-Z]+)*$", Email));
+    }
+    /* Mobile Number Format
+    4) Mobile number starts with 2 digit country code and 10 digit number and there is space between country code and mobile number
+     */
+    public static void validMobileNumber() {
+        System.out.println("Enter Mobile Number : ");
+        Scanner scanner = new Scanner(System.in);
+        String MobileNum = scanner.nextLine();
+        System.out.println(Pattern.matches("^[0-9]{0,2}\\s{0,1}[0-9]{10}", MobileNum));
     }
 }
