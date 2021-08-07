@@ -38,6 +38,6 @@ public class UserRegistration {
         System.out.println("Enter Mobile Number : ");
         Scanner scanner = new Scanner(System.in);
         String MobileNum = scanner.nextLine();
-        System.out.println(Pattern.matches("^[0-9]{0,2}\\s{0,1}[0-9]{10}", MobileNum));
+        System.out.println(Pattern.matches("^[0-9]{0,2}\\s[0-9]{10}", MobileNum));
     }
 }
