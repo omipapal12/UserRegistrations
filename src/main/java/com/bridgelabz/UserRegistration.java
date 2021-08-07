@@ -8,8 +8,8 @@ public class UserRegistration {
      */
     public static void validFirstName() {
         System.out.print("Enter First Name : ");
-        Scanner scanner = new Scanner(System.in);
-        String FirstName = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String FirstName = sc.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", FirstName));
     }
     /*
@@ -17,8 +17,8 @@ public class UserRegistration {
      */
     public static void validLastName() {
         System.out.print("Enter Last Name : ");
-        Scanner scanner = new Scanner(System.in);
-        String LastName = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String LastName = sc.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
     /*
@@ -27,8 +27,8 @@ public class UserRegistration {
      */
     public static void validEmailId() {
         System.out.print("Enter Email : ");
-        Scanner scanner = new Scanner(System.in);
-        String Email = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String Email = sc.next();
         System.out.println(Pattern.matches("^[a-zA-Z]+([.][a-zA-Z]+)*@[a-zA-Z]+[.][a-zA-Z]{2,3}+([.][a-zA-Z]+)*$", Email));
     }
     /* Mobile Number Format
@@ -36,8 +36,8 @@ public class UserRegistration {
      */
     public static void validMobileNumber() {
         System.out.println("Enter Mobile Number : ");
-        Scanner scanner = new Scanner(System.in);
-        String MobileNum = scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String MobileNum = sc.nextLine();
         System.out.println(Pattern.matches("^[0-9]{0,2}\\s[0-9]{10}", MobileNum));
     }
     /*
@@ -46,8 +46,8 @@ public class UserRegistration {
     public static void validPasswordRule1() {
         System.out.println("Password Should have minimum 8 charachters");
         System.out.print("Enter Password : ");
-        Scanner scanner = new Scanner(System.in);
-        String Password = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String Password = sc.next();
         System.out.println(Pattern.matches("^(?=.*[a-z]).{8,}$", Password));
     }
     /*
@@ -56,8 +56,8 @@ public class UserRegistration {
     public static void validPasswordRule2() {
         System.out.println("Password Should have at least 1 Upper Case");
         System.out.print("Enter Password Rule 2  : ");
-        Scanner scanner = new Scanner(System.in);
-        String Password = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String Password = sc.next();
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z]).{8,}$", Password));
     }
     /*
@@ -66,8 +66,8 @@ public class UserRegistration {
     public static void validPasswordRule3() {
         System.out.println("Paaword Should have at least 1 Numeric Number");
         System.out.print("Enter Password Rule 3  : ");
-        Scanner scanner = new Scanner(System.in);
-        String Password = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String Password = sc.next();
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$", Password));
     }
     /*
@@ -76,8 +76,8 @@ public class UserRegistration {
     public static void validPasswordRule4() {
         System.out.println("Password Should have at least 1 Special Character ");
         System.out.print("Enter password Rule 4  : ");
-        Scanner scanner = new Scanner(System.in);
-        String password = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String password = sc.next();
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$", password));
     }
     /*
