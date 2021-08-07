@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class UserRegistrationJUTest {
     private static final String FIRST_NAME = "[A-Z][a-z]{2,}+$";
     private static final String LAST_NAME = "[A-Z][a-z]{2,}+$";
-    private static final String EMAIL ="^[\\w+_-]+(?:\\.[\\w+_-]+)*[@][\\w]{1,}([.]{1}[a-z]{2,}){1,2}$";
+    private static final String EMAIL ="^[a-zA-Z]+([.][a-zA-Z]+)*@[a-zA-Z]+[.][a-zA-Z]{2,3}+([.][a-zA-Z]+)*$";
     private static final String MOBILE_NUMBER = "^[0-9]{0,2}\\s{0,1}[0-9]{10}";
     private static final String PASSWORD = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$";
 
