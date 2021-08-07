@@ -8,8 +8,8 @@ public class UserRegistration {
      */
     public static void validFirstName() {
         System.out.print("Enter First Name : ");
-        Scanner scanner = new Scanner(System.in);
-        String FirstName = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String FirstName = sc.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", FirstName));
     }
     /*
@@ -17,8 +17,8 @@ public class UserRegistration {
      */
     public static void validLastName() {
         System.out.print("Enter Last Name : ");
-        Scanner scanner = new Scanner(System.in);
-        String LastName = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String LastName = sc.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
     /*
@@ -27,8 +27,8 @@ public class UserRegistration {
      */
     public static void validEmail() {
         System.out.print("Enter Email : ");
-        Scanner scanner = new Scanner(System.in);
-        String Email = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String Email = sc.next();
         System.out.println(Pattern.matches("^[a-zA-Z]+([.][a-zA-Z]+)*@[a-zA-Z]+[.][a-zA-Z]{2,3}+([.][a-zA-Z]+)*$", Email));
     }
 }
