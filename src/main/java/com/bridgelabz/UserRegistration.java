@@ -22,8 +22,8 @@ public class UserRegistration {
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
     /*
-     * Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
-     * E.g. abc.def@com.co.in
+     * Email has 3 mandatory parts (abc, com & co) and 2 optional (xyz & in) with precise @ and . positions
+     * E.g. abc.xyz@com.co.in
      */
     public static void validEmail() {
         System.out.print("Enter Email : ");
